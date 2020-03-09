@@ -155,7 +155,7 @@ end
 command! -range=0 -complete=shellcmd -nargs=+ T
       \ call neoterm#do({ 'cmd': <q-args>, 'target': <count>, 'mod': <q-mods> })
 command! -range=0 -complete=shellcmd -nargs=+ Texec
-      \ call neoterm#exec({ 'cmd': [<f-args>, ''], 'target': <count> })
+      \ call neoterm#exec({ 'cmd': [<f-args>, '\r'], 'target': <count> })
 command! -bar Tnew
       \ call neoterm#new({ 'mod': <q-mods> })
 command! -bar -range=0 Topen
